@@ -1,0 +1,35 @@
+algoritmo "LOGIN"
+
+var
+
+   tentativas, usuario, senha : inteiro
+
+inicio
+   escreval ("   LOGIN VISUALG")
+
+   para tentativas de 1 ate 3 faça
+      escreval ("Digite seu usuário:")
+      leia (usuario)
+      escreval ("Digite sua senha:")
+      leia (senha)
+
+      se (usuario = 2020) e (senha = 12345) entao
+         limpatela ()
+         escreval ("Login realizado com sucesso!")
+         interrompa
+
+      senao
+         limpatela()
+         escreval ("Tentativas", tentativas, " de 3")
+
+
+         se (tentativas = 3) entao
+            escreval ("Acesso negado!")
+            interrompa
+
+         fimse
+
+
+      fimse
+   fimpara
+fimalgoritmo
